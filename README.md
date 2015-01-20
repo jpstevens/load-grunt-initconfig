@@ -21,9 +21,11 @@ $ tree -a
 |   ├── clean.js
 |   ├── copy.json
 |   ├── jshint.js
-|   └── mocha.json
+|   └── mochaTest.json
 └── Gruntfile.js
 ```
+
+**NOTE** The file name (e.g. `mochaTest.json`) maps to the grunt task `mochaTest`.
 
 Below is an example Gruntfile.js:
 
