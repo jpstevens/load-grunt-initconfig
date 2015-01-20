@@ -1,5 +1,9 @@
 # load-grunt-initconfig
 
+[![Build Status](https://travis-ci.org/jpstevens/load-grunt-initconfig.svg?branch=master)](https://travis-ci.org/jpstevens/load-grunt-initconfig)
+
+Separate your long configuration into bite-sized chunks.
+
 ## Installation
 
 ```
