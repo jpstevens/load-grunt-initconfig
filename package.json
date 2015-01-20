@@ -1,6 +1,6 @@
 {
   "name": "load-grunt-initconfig",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Separate your long configuration into bite-sized chunks",
   "main": "lib/index.js",
   "scripts": {

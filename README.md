@@ -13,7 +13,7 @@ npm install load-grunt-initconfig --save-dev
 ## Usage
 
 `load-grunt-initconfig` will look for config files in the `.initconfig`
-directory. Here is an example:
+directory. Here is an example project structure:
 ```
 $ tree -a
 .
@@ -25,9 +25,7 @@ $ tree -a
 └── Gruntfile.js
 ```
 
-**NOTE** The file name (e.g. `mochaTest.json`) maps to the grunt task `mochaTest`.
-
-Below is an example Gruntfile.js:
+And an corresponding Gruntfile.js:
 
 ```javascript
 module.exports = function (grunt) {
@@ -44,12 +42,28 @@ module.exports = function (grunt) {
 };
 ```
 
-In our example, this will require the config files `.initconfig/clean.js`,
-`.initconfig/copy.json`, `.initconfig/jshint.js` and `.initconfig/mochaTest.js`,
-combine them into a single config object, then call the `grunt.initConfig`
-method with that config object.
+In our example, this will require the config files, combine them into a single object, and apply that object to `grunt.initConfig`.
+Each of the config files' names should map to a grunt task (e.g. `mochaTest.json` maps to the `mochaTest` task).
 
-## Config File Examples
+### Options
+
+You can configure `load-grunt-initconfig` with options:
+
+- `dir` (the directory of your config files, default: `.initconfig`)
+
+Here is an example using options:
+
+```javascript
+module.exports = function (grunt) {
+  // load tasks ...
+  require('load-grunt-initconfig')(grunt, {
+    dir: '.gruntconfig'
+  });
+  //register tasks ...
+};
+```
+
+### Config File Examples
 
 There are two ways to include your config files, as `json` or `javascript`:
 
