@@ -98,3 +98,10 @@ module.exports = {
   }
 };
 ```
+
+## More Info
+
+If you are still unsure how the package works, check out the `Gruntfile.js` and
+`.initconfig` for this project on
+[GitHub](https://github.com/jpstevens/load-grunt-initconfig); it uses
+`load-grunt-initconfig` to test itself!
