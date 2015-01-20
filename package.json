@@ -1,0 +1,36 @@
+{
+  "name": "load-grunt-initconfig",
+  "version": "0.0.1",
+  "description": "Load grunt init config from files",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpstevens/load-grunt-initconfig.git"
+  },
+  "keywords": [
+    "grunt",
+    "init",
+    "config",
+    "initconfig"
+  ],
+  "author": "Jack Stevens <jack@applyr.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpstevens/load-grunt-initconfig/issues"
+  },
+  "homepage": "https://github.com/jpstevens/load-grunt-initconfig",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-test": "^0.12.6",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.6.0"
+  }
+}
